@@ -90,7 +90,6 @@ namespace HomeWork7._1
         public Workers GetWorkerById(int id)
         {
             string[] lines = File.ReadAllLines(path);
-            string s = "#";
             int i = 0;
             if (id < 0 || id > lines.Length)
             {
@@ -150,7 +149,6 @@ namespace HomeWork7._1
             using (StreamReader sr = new StreamReader(this.path))
             {
                 string line;
-                string s = "#";
                 while ((line = sr.ReadLine()) != null)
                 {
                     string[] data = line.Split('#');
@@ -179,7 +177,6 @@ namespace HomeWork7._1
         /// </summary>
         public void Sort()
         {
-            string s = "#";
             char key = ' ';
             do
             {
